@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+	<!--
+	Video found below
+	Source of video: https://www.youtube.com/watch?v=2eN58_TDA2I
+	-->
+    <video autoplay muted loop id="myVideo">
+      <source src="clouds.mp4" type="video/mp4">
+    </video>
+	<script>
+	function cipheranswer() {
+	var answer = document.getElementById('keyans').value;
+		if (answer == 'GOOD JOB' || answer == 'GOODJOB') {
+		  alert('GOOD JOB indeed!');
+		}
+		else {
+		  alert('Sorry, that is incorrect.');
+		  }
+	}
+	</script>
+  </head>
+  
+  <body>
+    <div id="caesarblock">
+	  <h1>Can you solve this <em>Caesar Cipher?</em></h1>
+	  <p id="keyoutput" "align="center" font-size="12">The key is 5.</p>
+	  <img src="caesarcipher.png">
+	  <p><br></p>
+	  <input type="text" id="keyans" name="keyanswer" size="45" placeholder="Enter the answer here and click the button below">
+	  <button class="cipheranswer" onClick="cipheranswer()">Enter</button>
+	</div>
+  </body>
+
+</html>
